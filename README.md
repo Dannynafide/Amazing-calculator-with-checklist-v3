@@ -21,6 +21,7 @@ kalkulator pomaga przejść tę drogę poprzez szacowanie wydatków.
     <li>Storybook v7</li>
     <li>Context</li>
     <li>Hooks</li>
+    <li>Husky and lint-staged</li>
 </ul>
 
 ## Link do aplikacji:
