@@ -27,7 +27,8 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "storybook": "storybook dev -p 6006 public",
-    "build-storybook": "storybook build -s public"
+    "build-storybook": "storybook build -s public",
+    "prepare": "husky install"
   },
   "eslintConfig": {
     "extends": [
@@ -77,6 +78,7 @@
     "eslint-plugin-react": "^7.32.1",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-storybook": "^0.6.10",
+    "husky": "^8.0.3",
     "prettier": "2.8.3",
     "storybook": "next"
   }
