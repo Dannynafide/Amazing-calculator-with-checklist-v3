@@ -1,0 +1,46 @@
+@import 'theme/func.scss';
+
+.button {
+  outline: none;
+  cursor: pointer;
+  padding: 8px 15px;
+  min-width: 100px;
+  color: var(--color-background);
+  background: var(--color-primary);
+  text-decoration: none;
+  border: none;
+  border-radius: 15px;
+
+  &:hover {
+    z-index: 2;
+    transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 2.275);
+    transition-duration: 400ms;
+    transform: scale(1.06, 1.06);
+  }
+
+  .icon {
+    font-size: 1.2em;
+    display: flex;
+  }
+
+  &__content {
+    @include hideText(1em, 1);
+  }
+
+  // Ripple Effect
+  position: relative;
+  overflow: hidden;
+  // /* this fixes the overflow:hidden in Chrome */
+  mask-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAIAAACQd1PeAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAA5JREFUeNpiYGBgAAgwAAAEAAGbA+oJAAAAAElFTkSuQmCC);
+}
+
+.buttonSecondary {
+  background-color: var(--color-secondary);
+}
+
+.buttonIcon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}

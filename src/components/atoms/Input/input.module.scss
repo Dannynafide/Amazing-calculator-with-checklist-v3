@@ -1,0 +1,19 @@
+.input {
+  width: 100%;
+  font-size: 14px;
+  color: var(--font-color);
+
+  overflow: hidden;
+  caret-color: var(--color-primary);
+  padding: 5px 2px;
+  margin: 2px 0px;
+  border: transparent 2px solid;
+  background-color: var(--color-background-lighten);
+  border-radius: 4px;
+
+  &:focus {
+    outline: none;
+    border: var(--color-border-mix) 2px solid;
+    border-radius: 4px;
+  }
+}

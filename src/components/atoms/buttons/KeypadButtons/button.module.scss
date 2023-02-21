@@ -1,0 +1,35 @@
+.keypad_btn {
+  position: relative;
+  overflow: hidden;
+  mask-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAIAAACQd1PeAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAA5JREFUeNpiYGBgAAgwAAAEAAGbA+oJAAAAAElFTkSuQmCC);
+}
+
+.bracket_btn {
+  line-height: 20px;
+  color: var(--color-primary);
+  background: transparent;
+  border: 1px solid var(--color-border);
+  border-radius: 4px;
+  font-weight: bold;
+  min-width: 50px;
+}
+
+.digit_btn {
+  background-color: transparent;
+  border: none;
+  border-radius: 10px;
+  color: var(--font-color);
+  font-size: 16px;
+  font-weight: bold;
+  height: 40px;
+}
+
+.operator_btn {
+  background-color: var(--color-primary);
+  border: none;
+  border-radius: 30px;
+  color: var(--color-background);
+  font-size: 16px;
+  width: 36px;
+  height: 36px;
+}

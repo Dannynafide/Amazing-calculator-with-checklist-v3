@@ -1,0 +1,40 @@
+.projectsList__item,
+.projectsList__editItem {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  display: grid;
+  grid-template-columns: auto 3fr 2fr auto;
+  column-gap: 5px;
+  align-items: center;
+  border-bottom: solid 1px var(--color-border);
+  color: var(--font-color);
+
+  &__name {
+    font-size: var(--font-size-m);
+    justify-self: start;
+    text-decoration: none;
+    color: inherit;
+    max-width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+    &:visited {
+      color: var(--font-color);
+    }
+    &:hover {
+      color: var(--color-primary);
+    }
+  }
+
+  &__cost {
+    justify-self: end;
+    max-width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+}
+
+.projectsList__editItem {
+  grid-template-columns: auto 1fr auto;
+}

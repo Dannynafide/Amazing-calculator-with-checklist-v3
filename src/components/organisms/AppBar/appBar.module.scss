@@ -1,0 +1,24 @@
+.appbar {
+  height: 45px;
+  position: relative;
+  background-color: var(--color-background);
+  z-index: 1;
+
+  .appbar__accordion {
+    padding: 0px 20px;
+    box-sizing: border-box;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    background-color: var(--color-background);
+
+    p {
+      max-width: 80%;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+  }
+}

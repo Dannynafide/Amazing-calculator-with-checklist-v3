@@ -1,0 +1,20 @@
+.history__item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-overflow: ellipsis;
+  color: var(--font-color-secondary);
+  line-height: var(--font-size-s);
+  font-size: inherit;
+
+  .history__item__remove {
+    padding: 2px;
+  }
+
+  .history__item__cost {
+    max-width: 90%;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    font-size: inherit;
+  }
+}

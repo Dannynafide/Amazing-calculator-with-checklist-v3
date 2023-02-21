@@ -1,0 +1,96 @@
+.dropdown {
+  position: absolute;
+  top: 45px;
+  left: 0px;
+  overflow: hidden;
+  width: 100%;
+  box-sizing: border-box;
+  visibility: hidden;
+
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  background-color: var(--color-background);
+  color: var(--font-color);
+  padding: 10px 20px;
+
+  &__open {
+    animation-name: show;
+    animation-duration: 0.4s;
+    visibility: visible;
+
+    @keyframes show {
+      0% {
+        transform: translate(0, -100%);
+        z-index: -1;
+      }
+      99% {
+        z-index: -1;
+      }
+
+      100% {
+        transform: translate(0, 0);
+        z-index: 0;
+      }
+    }
+  }
+
+  &__close {
+    animation-name: hide;
+    animation-duration: 0.3s;
+    opacity: 0;
+
+    @keyframes hide {
+      0% {
+        transform: translate(0, 0);
+        visibility: visible;
+        visibility: visible;
+        z-index: -1;
+        opacity: 1;
+      }
+      99% {
+        visibility: visible;
+        z-index: -1;
+        opacity: 1;
+      }
+
+      100% {
+        transform: translate(0, -100%);
+        visibility: hidden;
+        z-index: 0;
+        opacity: 0;
+      }
+    }
+  }
+}
+
+.dropdown__projectsList {
+  list-style-type: none;
+  margin-top: 10px;
+  padding-bottom: 10px;
+}
+
+.themeSelect {
+  position: relative;
+  background-color: transparent;
+  color: inherit;
+  padding: 5px;
+  border-radius: 4px;
+  border: var(--color-border) 2px solid;
+
+  &:focus {
+    outline: none;
+    border: var(--color-border-mix) 2px solid;
+    border-radius: 4px;
+  }
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 6fr 4fr;
+  grid-gap: 10px;
+  align-items: center;
+
+  .mdExitToApp {
+    margin-left: 5px;
+  }
+}

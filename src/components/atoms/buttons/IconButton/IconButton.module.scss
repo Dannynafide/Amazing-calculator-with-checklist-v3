@@ -1,0 +1,29 @@
+.buttonIcon {
+  background-color: transparent;
+  border: transparent solid 1px;
+  padding: 3px;
+  font-size: inherit;
+  border-radius: 4px;
+  cursor: pointer;
+  color: var(--font-color-hidden);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &:hover {
+    color: --color-primary;
+    border: solid 1px var(--color-border);
+  }
+
+  // Ripple Effect
+  position: relative;
+  overflow: hidden;
+  mask-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAIAAACQd1PeAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAA5JREFUeNpiYGBgAAgwAAAEAAGbA+oJAAAAAElFTkSuQmCC);
+}
+
+.remove {
+  &:hover {
+    color: var(--color-error);
+  }
+}

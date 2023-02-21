@@ -1,0 +1,27 @@
+.display {
+  position: relative;
+  margin: 10px 0px 15px 0px;
+  padding-bottom: 12px;
+
+  .price {
+    position: relative;
+
+    .priceNumber {
+      text-align: right;
+      position: relative;
+
+      > * {
+        margin: 0;
+      }
+    }
+  }
+
+  .underline {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 35px;
+    height: 2px;
+    background: var(--color-primary);
+  }
+}
