@@ -27,8 +27,7 @@ kalkulator pomaga przejść tę drogę poprzez szacowanie wydatków.
 ## Link do aplikacji:
 
 Wdrożona aplikacja dostępna pod adresem:
-
-<!-- https://spiffy-platypus-fb82f4.netlify.app -->
+https://coruscating-cucurucho-6f8402.netlify.app
 
 ## Podgląd aplikacji:
 
