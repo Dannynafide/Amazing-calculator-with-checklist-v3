@@ -5,7 +5,7 @@
   text-overflow: ellipsis;
   color: var(--font-color-secondary);
   line-height: var(--font-size-s);
-  font-size: inherit;
+  font-size: var(--font-size-xs);
 
   .history__item__remove {
     padding: 2px;
