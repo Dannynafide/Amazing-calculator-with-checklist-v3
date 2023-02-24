@@ -22,6 +22,7 @@ kalkulator pomaga przejść tę drogę poprzez szacowanie wydatków.
     <li>Context</li>
     <li>Hooks</li>
     <li>Husky and lint-staged</li>
+    <li>React Testing Library</li>
 </ul>
 
 ## Link do aplikacji:
