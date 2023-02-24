@@ -1,10 +1,12 @@
+import {ReactElement} from 'react';
+
 import AppBar from 'components/organisms/AppBar/AppBar';
 import {useTheme} from 'context/themeContext';
 import 'theme/breakpoints.scss';
 import 'theme/index.scss';
 import styles from './mainTemplate.module.scss';
 
-export default function MainTemplate({children}) {
+export default function MainTemplate({children}: {children: ReactElement}) {
   const {theme} = useTheme();
 
   return (

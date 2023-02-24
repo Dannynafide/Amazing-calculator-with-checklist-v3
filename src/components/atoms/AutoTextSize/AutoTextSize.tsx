@@ -30,7 +30,7 @@ export default function AutoTextSize({children}: {children: string}) {
     <span
       style={{
         fontSize: `${Math.floor(size)}px`,
-        lineHeight: `${Math.floor(size)}px`,
+        lineHeight: Math.floor(1),
       }}
       ref={textRef}
     >
