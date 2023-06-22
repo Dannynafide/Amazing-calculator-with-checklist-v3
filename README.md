@@ -36,5 +36,5 @@ The implemented application is available at:
 
 ## Inspiration
 
-Inspiration found on the dribbble
-[dribbble](https://dribbble.com/shots/6153949-Calculate-Check-Repeat)
+Front-end design inspired by
+[@JuanFer ☄️](https://dribbble.com/shots/6153949-Calculate-Check-Repeat)
